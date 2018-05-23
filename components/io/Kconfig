@@ -1,0 +1,42 @@
+menu "Leds & Button Configuration"
+
+config USE_SYS_LED
+        bool "Use SYS_LED"
+        default N
+config SYS_LED_GPIO
+   int "System Led GPIO number"
+     depends on USE_SYS_LED
+     range 0 39
+     default 25
+     help
+        GPIO number (IOxx) to blink on and off.
+        Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to blink.
+        GPIOs 35-39 are input-only so cannot be used as outputs.
+
+config USE_INFO_LED
+        bool "Use INFO_LED"
+        default N
+config INFO_LED_GPIO
+     int "Info Led GPIO number"
+     depends on USE_INFO_LED
+     range 0 39
+     default 26
+     help
+        GPIO number (IOxx) to blink on and off.
+        Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to blink.
+        GPIOs 35-39 are input-only so cannot be used as outputs.
+
+config USE_WPS_BTN
+        bool "Use WPS_BTN"
+        default N
+config WPS_BTN_GPIO
+   int "Button GPIO number"
+     depends on USE_WPS_BTN
+     range 0 39
+     default 0
+     help
+        GPIO number (IOxx) for button.
+        Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to blink.
+        GPIOs 35-39 are input-only so cannot be used as outputs.
+
+endmenu
