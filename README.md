@@ -1,9 +1,9 @@
 # esp32-httpd-demo
 This is a httpd webserver demo based on the work from spritetm, chmorgen, MightyPork and others.
-https://github.com/Spritetm/libesphttpd
-https://github.com/Spritetm/esphttpd
-https://github.com/chmorgan/libesphttpd
-https://github.com/MightyPork/esphttpd
+ - https://github.com/Spritetm/libesphttpd
+ - https://github.com/Spritetm/esphttpd
+ - https://github.com/chmorgan/libesphttpd
+ - https://github.com/MightyPork/esphttpd
 
 # esp-httpd README #
 
